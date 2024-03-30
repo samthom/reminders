@@ -28,7 +28,8 @@ typedef struct {
 
 void render_help() { printf("%s", HELP); }
 
-void process_flags(__attribute__((unused)) cmd_config_t *config, char **args, int args_count) {
+void process_flags(__attribute__((unused)) cmd_config_t *config, char **args,
+									 int args_count) {
 	// Go through each element in the array string and retrieve flag values
 	for (int i = 0; i < args_count; i++) {
 		if (args[i]) {
